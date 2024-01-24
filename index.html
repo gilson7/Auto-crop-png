@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>crop png</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icon.png" width="30" height="30" srcset="">
+            <label>CROP PNG</label>
+        </div>
+        <label for="input_img" class="label_input_file">^ Upload images</label>
+        <input type="file" name="img" id="input_img" style="display: none;" multiple>
+    </header>
+    <div class="main">
+        <h4>A app to remove empty area of your png image</h4>
+        <div class="imgs" id="imgs">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3/dist/jszip.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root{
+    --cl1:#F2F0E5;
+    --cl2:#212123;
+    --cl3:#4B80CA;
+    --cl4:#B45252;
+    --cl5:#68C2D3;
+}
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--cl2);
+   
+}
+
+body{
+    margin: 0;
+}
+header{
+    border-bottom: solid 3px var(--cl2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo label{
+    margin-left: 10px;
+    font-weight: 900;
+}
+.main{
+    text-align: center;
+}
+.label_input_file {
+  background-color: var(--cl3);
+  padding: 10px 14px;
+  border-radius: 120px;
+  font-weight: 900;
+  color: var(--cl1);
+  user-select: none;
+  cursor: pointer;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms;
+}
+.label_input_file:hover{
+    filter: brightness(1.1);
+}
+.label_input_file:active{
+    filter: brightness(.9);
+}
+.imgs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: auto;
+    height: calc(100vh - 162px);
+    justify-content: center;
+}
+.imgs img{
+    border: solid 1px var(--cl2);
+    width: 200px;
+    margin: 5px;
+}
+.download{
+    background-color: var(--cl5);
+    padding: 5px;
+    font-weight: 900;
+    margin: 6px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 200px;
+}
